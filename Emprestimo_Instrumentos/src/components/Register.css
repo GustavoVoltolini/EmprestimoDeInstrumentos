@@ -1,0 +1,27 @@
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: end;
+  background-color: red;
+  width: 75%;
+}
+.btn-register {
+  background-color: #2b6cb0;
+  width: 75%;
+}
+.instruments,
+.collaborator {
+  grid-column: span 2;
+}
+.machine {
+  grid-column: span 1;
+}
+
+.data {
+  grid-column: span 1;
+}
+
+.Observation {
+  grid-column: span 1;
+}
