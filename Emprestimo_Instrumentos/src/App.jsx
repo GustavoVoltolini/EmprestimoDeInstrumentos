@@ -5,7 +5,7 @@ import Title from "./components/Title"
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <div>
         <Title />
       </div>

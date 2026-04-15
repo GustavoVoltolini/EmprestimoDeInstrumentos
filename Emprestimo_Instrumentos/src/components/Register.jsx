@@ -1,53 +1,66 @@
 import "./Register.css"
+import { FaTools } from "react-icons/fa";
 
 const Register = () => {
     return (
-        <div className="register-body">
-            <div className="register-history-title">
-                <h2>REGISTRAR NOVO EMPRESTIMO</h2>
-                <div className="inputs">
-                    <div className="inputs-esq">
-                        <div className="instruments">
-                            <h3>Instrumento</h3>
-                            <select name="instruments" >
-                                <option value="" disabled selected hidden>Selecione o instrumento...</option>
-                                <option value="paquimetro">Paquimetro</option>
-                                <option value="micrometro">Micrometro</option>
+        <div className="main">
+            <h2>REGISTRAR NOVO EMPRÉSTIMO</h2>
+            <form className="form-emprestimo">
+                <div className="form-row">
+                    <div className="form-group">
+                        <label>Instrumento</label>
+                        <div className="input-group">
+                            <span className="input-icon">
+                                <FaTools />
+                            </span>
+                            <select name="instruments" defaultValue="">
+                                <option value="" disabled hidden>Selecionar Instrumento...</option>
+                                <option value="paquimetro">Paquímetro</option>
+                                <option value="micrometro">Micrômetro</option>
                             </select>
-                        </div>
-                        <div className="machine">
-                            <h3>Máquina</h3>
-                            <select name="select-machine" >
-                                <option value="" disabled selected hidden>Selecionar Máquina...</option>
-                                <option value="paquimetro">Hwacheon</option>
-                                <option value="micrometro">Mazak</option>
-                            </select>
-                        </div>
-                        <div className="data">
-                            <h3>Data</h3>
-                            <input type="date" />
-                        </div>
-                    </div>
-                    <div className="inputs-dir">
-                        <div className="collaborator">
-                            <h3>Colaborador</h3>
-                            <select name="collaborator" >
-                                <option value="" disabled selected hidden>Selecionar colaborador...</option>
-                                <option value="paquimetro">Gustavo</option>
-                                <option value="micrometro">Maria</option>
-                            </select>
+
                         </div>
 
                     </div>
-                    <div className="Observation">
-                        <h3>Observações/Ramal/Crachá</h3>
-                        <input type="text" placeholder="Digite o ramal, crachá ou detalhes..." />
+
+                    <div className="form-group">
+                        <label>Colaborador</label>
+                        <select name="collaborator" defaultValue="">
+                            <option value="" disabled hidden>Selecionar colaborador...</option>
+                            <option value="gustavo">Gustavo</option>
+                            <option value="maria">Maria</option>
+                        </select>
                     </div>
                 </div>
-                <button className="btn-register">Registrar Empréstimo</button>
-            </div>
-        </div>
 
+                <div className="form-row">
+                    <div className="form-group">
+                        <label>Máquina</label>
+                        <select name="select-machine" defaultValue="">
+                            <option value="" disabled hidden>Selecionar Máquina...</option>
+                            <option value="hwacheon">Hwacheon</option>
+                            <option value="mazak">Mazak</option>
+                        </select>
+                    </div>
+
+                    <div className="form-group">
+                        <label className="data">Data</label>
+                        <input type="date" />
+                    </div>
+
+                    <div className="form-group">
+                        <label>Observações / Ramal</label>
+                        <input type="text" placeholder="Digite os detalhes..." />
+                    </div>
+                </div>
+
+                <div className="form-actions">
+                    <button type="submit" className="btn-registrar">
+                        REGISTRAR EMPRÉSTIMO
+                    </button>
+                </div>
+            </form>
+        </div>
     )
 }
 

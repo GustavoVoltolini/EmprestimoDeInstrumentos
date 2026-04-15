@@ -2,7 +2,7 @@ import "./History.css"
 
 const History = () => {
     return (
-        <div className="history-body">
+        <div className="main">
 
         </div>
     )

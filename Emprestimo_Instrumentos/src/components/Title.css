@@ -1,3 +1,14 @@
 * {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: flex;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  align-items: start;
+  background-color: #c3d0ed;
+  width: 100%;
 }
