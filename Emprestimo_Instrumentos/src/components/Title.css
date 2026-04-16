@@ -1,14 +1,25 @@
-* {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.header-blue {
+  background-color: #1e40af;
+  color: white;
+  padding: 0.1%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1.5%;
+}
+
+.container-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 h1 {
-  display: flex;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  align-items: start;
-  background-color: #c3d0ed;
-  width: 100%;
+  font-size: 25px;
+}
+
+.icon-compass {
+  font-size: 30px;
 }
