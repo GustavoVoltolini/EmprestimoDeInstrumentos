@@ -1,11 +1,104 @@
-.main {
-  margin: auto;
+.history {
+  max-width: 1500px;
+  min-height: 200px;
+  font-family: sans-serif;
+  margin: 2% auto;
   background-color: #ffffff;
-  max-width: 80%;
   border-radius: 15px;
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  display: flex;
+  justify-content: start;
+  padding: 25px 0 30px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 2% 0% 0% 0%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.search input {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.icon {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.filter {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.filter select {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.table {
+  border: 1px solid #6b7280a9;
+  margin: 3%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.table-header {
+  display: flex;
   width: 100%;
-  box-sizing: border-box;
+}
+
+.table-column {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-right: 1px solid #6b7280a9;
+  padding: 5px;
+}
+
+.table-column:nth-child(1) {
+  flex: 2.5;
+} /* Instrumento */
+.table-column:nth-child(2) {
+  flex: 1.5;
+} /* Colaborador */
+.table-column:nth-child(3) {
+  flex: 1.2;
+} /* Ramal/Nome */
+.table-column:nth-child(4) {
+  flex: 1.5;
+} /* Máquina/Posto */
+.table-column:nth-child(5) {
+  flex: 1;
+} /* Data */
+.table-column:nth-child(6) {
+  flex: 1;
+} /* Status */
+.table-column:nth-child(7) {
+  flex: 1;
+} /* Ações */
+
+tr {
+  font-size: 20px;
+  font-weight: bold;
 }
